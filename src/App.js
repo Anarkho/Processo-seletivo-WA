@@ -1,6 +1,5 @@
 import React from "react";
-import { createMuiTheme } from "@material-ui/core/styles";
-import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import { ThemeProvider, createMuiTheme } from '@material-ui/core';
 
 import "./App.css";
 import Home from "./pages/Home";
@@ -8,22 +7,19 @@ import DetailsQuestion from "./pages/DetailsQuestion";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const theme = createMuiTheme({
-  typography: {
-    useNextVariants: true,
-  },
   palette: {
     primary: {
-      main: "#22222",
+      main: '#222',
     },
     secondary: {
-      main: "#fffe",
+      main: '#fff',
     },
   },
 });
 
 function App() {
   return (
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <Router>
         <div className="App">
           <Switch>
@@ -32,7 +28,7 @@ function App() {
           </Switch>
         </div>
       </Router>
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
 }
 

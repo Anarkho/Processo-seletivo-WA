@@ -2,7 +2,7 @@
     padding: 20px;
     font-size: 2rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .slider{

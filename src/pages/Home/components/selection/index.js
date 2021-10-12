@@ -1,22 +1,26 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./selection.css";
 import { Card, Slider } from "@material-ui/core";
+import { questionaryContext } from "../../../../App";
 
 const Selection = () => {
-  const [value, setvalue] = useState(1);
+  const { state, setState } = useContext(questionaryContext);
 
   const changeValue = (event, value) => {
-    setvalue(value);
+    setState({
+      type: "QUANTIDADE",
+      payload: value,
+    });
   };
   const getText = (value) => `${value}`;
   return (
     <Card className="card-selection">
-      Escolha quantas questões quer responder
+      Quantas questões quer responder?
       <Slider
         className="slider"
         min={1}
         max={10}
-        value={value}
+        value={state.quantidade}
         marks
         onChange={changeValue}
         getAriaValueText={getText}

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./selection.css";
 import { Card, Slider } from "@material-ui/core";
-import { questionaryContext } from "../../../../App";
+import { questionaryContext } from "@/App";
 
 const Selection = () => {
   const { state, setState } = useContext(questionaryContext);

@@ -12,21 +12,34 @@ const Question = () => {
         {state.questoes.map((data) => {
           return (
             <div className="question">
-            <Card key={data.question}>
-            <div style={{ padding: 10 }}>
-                <h5>{data.question}</h5>
-                <div>
-                  {data.incorrect_answers.map((data) => {
-                    return (
-                      <>
-                        <button>{data}</button> &nbsp;&nbsp;
-                      </>
-                    );
-                  })}
-                  <button>{data.correct_answer}</button>
+              <Card>
+                <div style={{ padding: 10 }}>
+                  <h5>
+                    {data.question
+                      .replace(/&#039;/g, "'")
+                      .replace(/&quot;/g, '"')
+                      .replace(/&rdquo;/g, "`")
+                      .replace(/&ldquo;/g, '"')}
+                  </h5>
+                  <div>
+                    {data.incorrect_answers.map((data) => {
+                      return (
+                        <>
+                          <button>
+                            {data
+                              .replace(/&#039;/g, "'")
+                              .replace(/&quot;/g, '"')
+                              .replace(/&rdquo;/g, "`")
+                              .replace(/&ldquo;/g, '"')}
+                          </button>{" "}
+                          &nbsp;&nbsp;
+                        </>
+                      );
+                    })}
+                    <button>{data.correct_answer}</button>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
             </div>
           );
         })}

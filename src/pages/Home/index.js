@@ -20,7 +20,6 @@ function Home() {
       });
     });
   };
-
   return (
     <div className="home">
       <div
@@ -28,8 +27,8 @@ function Home() {
           display: display,
           alignItems: "center",
           flexDirection: "column",
-          height: '100vh',
-          justifyContent: "center"
+          height: "100vh",
+          justifyContent: "center",
         }}
       >
         <Selection />

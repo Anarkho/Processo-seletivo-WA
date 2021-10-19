@@ -55,7 +55,6 @@ function Home() {
                 payload: 1,
               });
               setDisplay("flex");
-              window.location.reload();
             }}
           >
             Cancel

@@ -1,0 +1,50 @@
+.relatorio {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+h1 {
+  font-family: cursive, Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+textarea {
+  background-color: #d4d1d1;
+  color: black;
+}
+.erros {
+  font-family: cursive, Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background-color: darkred;
+  color: white;
+  padding: 10px;
+}
+.acertos {
+  font-family: cursive, Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background-color: darkgreen;
+  color: white;
+}
+#op {
+  margin-left: 10px;
+  font-weight: bold;
+}
+#op2 {
+  margin-left: 10px;
+  font-weight: bold;
+  color: green;
+}

@@ -5,7 +5,7 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core";
 
 import "./App.css";
 import Home from "./pages/Home";
-import DetailsQuestion from "./pages/DetailsQuestion";
+import Final from "./pages/Final";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 export const questionaryContext = createContext();
@@ -40,7 +40,7 @@ function App() {
           <div className="App">
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/details_Question" component={DetailsQuestion} />
+              <Route path="/final" component={Final} />
             </Switch>
           </div>
         </Router>

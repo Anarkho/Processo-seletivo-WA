@@ -1,11 +1,17 @@
-.card-selection{
-    padding: 20px;
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: capitalize;
-    width: 80%;
+.card-selection {
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 80%;
+  font-family: cursive, Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+}
+.slider {
+  margin-top: 40px;
 }
 
-.slider{
-    margin-top: 40px;
+@media (min-width: 800px) {
+  .card-selection {
+    width: 100%;
+  }
 }

@@ -3,7 +3,6 @@ import { questionaryReducer } from "./store/questionary";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
 
-import "./App.css";
 import Home from "./pages/Home";
 import Final from "./pages/Final";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
